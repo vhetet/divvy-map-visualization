@@ -1,13 +1,8 @@
 <template>
-
-  <div>
-    <div>
-      Marker icon are retrived from {{ path }} custom path
-    </div>
+  <div class="map-container">
     <l-map
       :zoom="zoom"
       :center="center"
-      style="height: 800px; width: 100%"
     >
       <l-tile-layer
         :url="url"
@@ -73,4 +68,9 @@ export default {
   height: auto !important;
   margin: 0 !important;
 }
+
+.map-container {
+    height: 100%;
+}
+
 </style>
